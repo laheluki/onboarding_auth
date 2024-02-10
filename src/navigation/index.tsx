@@ -5,8 +5,14 @@ import { Text, View, StyleSheet } from 'react-native';
 
 import Details from '../screens/details';
 import Overview from '../screens/overview';
+import Onboarding from '@/screens/onboarding';
+import Login from '@/screens/login';
+import Register from '@/screens/register';
 
 export type RootStackParamList = {
+  Onboarding: undefined;
+  Login: undefined;
+  Register: undefined;
   Overview: undefined;
   Details: { name: string };
 };
@@ -16,7 +22,28 @@ const Stack = createStackNavigator<RootStackParamList>();
 export default function RootStack() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Overview">
+      <Stack.Navigator initialRouteName="Onboarding">
+        <Stack.Screen
+          name="Onboarding"
+          component={Onboarding}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Register"
+          component={Register}
+          options={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen name="Overview" component={Overview} />
         <Stack.Screen
           name="Details"
