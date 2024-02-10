@@ -1,6 +1,6 @@
 # Design to code - authentication screen with onboarding
 
-<img src="https://s3-alpha.figma.com/hub/file/4132515634/resized/800x480/557a6326-3481-4012-a310-a4c07f04c7fb-cover.png"/>
+<img src="https://raw.githubusercontent.com/laheluki/onboarding_auth/master/assets/image/demo.png"/>
 
 ## Inspiration
 
